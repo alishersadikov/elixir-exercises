@@ -11,7 +11,7 @@ IO.puts fizz_buzz.({ 1, 0, 3 })
 IO.puts fizz_buzz.({ 1, 2, 3 })
 
 evaluate = fn
-  n -> evaluate.({rem(n, 3), rem(n, 5), n})
+  n -> fizz_buzz.({rem(n, 3), rem(n, 5), n})
 end
 
 IO.puts evaluate.(10)
